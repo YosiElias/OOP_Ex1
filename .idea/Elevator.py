@@ -12,7 +12,7 @@ class Elevator:
         ans += f"\t\tstopTime: {self.get_stopTime()}"
         return ans
 
-    def __init__(self, id:int=None, speed:float=None, minFloor:int=None, maxFloor:int=None,
+    def __init__(self, id:str=None, speed:float=None, minFloor:int=None, maxFloor:int=None,
                  closeTime:float=None, openTime:float=None,  startTime:float=None,
                  stopTime: float = None):
         self._id = id

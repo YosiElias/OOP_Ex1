@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5beb7abf-ca75-47c7-b2bc-3ed340cec608" name="Default Changelist" comment="" />
+    <list default="true" id="5beb7abf-ca75-47c7-b2bc-3ed340cec608" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Calls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/OfflineAlgo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Elevator.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Elevator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ex1_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ex1_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="20dxk24frFbtwTrLuZHJcZvjEz0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,8 +34,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -38,28 +51,7 @@
       <recent name="C:\Users\Aviva\Desktop\untitled2\.idea\inspectionProfiles" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ReadFromJson (1)">
-    <configuration name="Building" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Ex1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/Building.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Ex1_main (1)">
     <configuration name="Ex1_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OOP_Ex1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,6 +86,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\Aviva\Desktop\untitled2\.idea\Ex1_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OfflineAlgo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/OfflineAlgo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ReadFromJson (1)" />
         <item itemvalue="Python.Ex1_main (1)" />
+        <item itemvalue="Python.OfflineAlgo" />
+        <item itemvalue="Python.ReadFromJson (1)" />
         <item itemvalue="Python.Ex1_main" />
         <item itemvalue="Python.ReadFromJson" />
-        <item itemvalue="Python.Building" />
       </list>
     </recent_temporary>
   </component>
@@ -168,43 +181,75 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="181" width="816" height="723" key="#Intentions" timestamp="1636580144583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" width="816" height="723" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1636580144583" />
     <state x="669" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1636405324940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="446" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1636393856972" />
     <state x="669" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636405324940" />
-    <state width="1899" height="517" key="GridCell.Tab.0.bottom" timestamp="1636413632347">
+    <state width="1899" height="368" key="GridCell.Tab.0.bottom" timestamp="1636588150966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1244" height="136" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1636402095326" />
-    <state width="1899" height="517" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632347" />
-    <state width="1899" height="517" key="GridCell.Tab.0.center" timestamp="1636413632346">
+    <state width="1259" height="225" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1636569498425" />
+    <state width="1899" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.0.center" timestamp="1636588150966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1244" height="136" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1636402095325" />
-    <state width="1899" height="517" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632346" />
-    <state width="1899" height="517" key="GridCell.Tab.0.left" timestamp="1636413632346">
+    <state width="1259" height="225" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1636569498425" />
+    <state width="1899" height="368" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.0.left" timestamp="1636588150966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1244" height="136" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1636402095325" />
-    <state width="1899" height="517" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632346" />
-    <state width="1899" height="517" key="GridCell.Tab.0.right" timestamp="1636413632347">
+    <state width="1259" height="225" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1636569498425" />
+    <state width="1899" height="368" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.0.right" timestamp="1636588150966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1244" height="136" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1636402095325" />
-    <state width="1899" height="517" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632347" />
-    <state x="144" y="0" key="SettingsEditor" timestamp="1636390808416">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1259" height="225" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1636569498425" />
+    <state width="1899" height="368" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.1.bottom" timestamp="1636588150966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.1.center" timestamp="1636588150966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.1.left" timestamp="1636588150966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state width="1899" height="368" key="GridCell.Tab.1.right" timestamp="1636588150966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="368" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636588150966" />
+    <state x="236" y="53" key="SettingsEditor" timestamp="1636576296088">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1636390808416" />
-    <state x="522" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1636413559575">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="236" y="53" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1636576296088" />
+    <state x="348" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1636557861584">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="348" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1636390826062" />
+    <state x="348" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1636557861584" />
     <state x="522" y="257" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636413559575" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1636404922670">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636581586169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636404922670" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636581586169" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
