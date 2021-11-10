@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5beb7abf-ca75-47c7-b2bc-3ed340cec608" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20dxk24frFbtwTrLuZHJcZvjEz0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aviva\Desktop\OOP_Ex1\.idea" />
+      <recent name="C:\Users\Aviva\Desktop\untitled2\venv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aviva\Desktop\OOP_Ex1\.idea" />
+      <recent name="C:\Users\Aviva\Desktop\untitled2\venv" />
+      <recent name="C:\Users\Aviva\Desktop\untitled2" />
+      <recent name="C:\Users\Aviva\Desktop\untitled2\.idea" />
+      <recent name="C:\Users\Aviva\Desktop\untitled2\.idea\inspectionProfiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ReadFromJson (1)">
+    <configuration name="Building" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/Building.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ex1_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/Ex1_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ex1_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Aviva\Desktop\untitled2\.idea\Ex1_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReadFromJson (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/ReadFromJson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReadFromJson" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP_Ex1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Aviva\Desktop\untitled2\.idea\ReadFromJson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ReadFromJson (1)" />
+        <item itemvalue="Python.Ex1_main (1)" />
+        <item itemvalue="Python.Ex1_main" />
+        <item itemvalue="Python.ReadFromJson" />
+        <item itemvalue="Python.Building" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5beb7abf-ca75-47c7-b2bc-3ed340cec608" name="Default Changelist" comment="" />
+      <created>1636388405208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636388405208</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="669" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1636405324940">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="446" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1636393856972" />
+    <state x="669" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636405324940" />
+    <state width="1899" height="517" key="GridCell.Tab.0.bottom" timestamp="1636413632347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1244" height="136" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1636402095326" />
+    <state width="1899" height="517" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632347" />
+    <state width="1899" height="517" key="GridCell.Tab.0.center" timestamp="1636413632346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1244" height="136" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1636402095325" />
+    <state width="1899" height="517" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632346" />
+    <state width="1899" height="517" key="GridCell.Tab.0.left" timestamp="1636413632346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1244" height="136" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1636402095325" />
+    <state width="1899" height="517" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632346" />
+    <state width="1899" height="517" key="GridCell.Tab.0.right" timestamp="1636413632347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1244" height="136" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1636402095325" />
+    <state width="1899" height="517" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636413632347" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1636390808416">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1636390808416" />
+    <state x="522" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1636413559575">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="348" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1636390826062" />
+    <state x="522" y="257" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636413559575" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1636404922670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636404922670" />
+  </component>
+</project>
