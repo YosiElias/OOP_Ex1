@@ -25,7 +25,7 @@ def read(filePath:str) -> Building:
         b+=e
         # print(b.get_elevDict()[str(e.get_id())])
 
-    print(b)
+    # print(b) #Todo: print b, for testing. dbs
     # Closing file
     f.close()
     return b

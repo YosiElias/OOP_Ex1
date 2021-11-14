@@ -6,6 +6,7 @@ from Manage import Manage
 from Calls import Calls
 import sys
 import ReadCsv
+# import numpy as np
 ####################################################
 # temp value:
 # calList = []
@@ -18,7 +19,8 @@ import ReadCsv
 ###################################################
 class OfflineAlgo:
 
-    def __init__(self, jsonPath:str=None, csvPath:str=None):
+    def __init__(self, jsonPath:str=None, csvPath:str=None, N_MULL_OF_COST:float=1.0):
+        self.N_MULL_OF_COST = N_MULL_OF_COST    # Todo: 1.9 is good n for B5_d_ - dbs
         self.b: Building = ReadFromJson.read(jsonPath)
         self.index_elev_dict = {}
         j=0
@@ -30,7 +32,8 @@ class OfflineAlgo:
         self.rows_of_old_csv = csv_dict.get("rows_of_csv")
         self.manage: Manage = Manage(b=self.b, callList=self.call_list)
         self.algoOffline()
-        print("**************************************** - RUN ALGORITEM IS DONE - ****************************************")
+
+        print("****************************************  RUN ALGORITEM IS DONE :) ****************************************")
 
 
     def algoOffline(self):
@@ -68,7 +71,7 @@ class OfflineAlgo:
     def systemTime(self, id:str=None, call:Calls=None, elev:Elevator=None):
         n = self.manage.numOfWaitCalls(id=id, time=call.get_time_arrive())
         time = elev.get_startTime() + elev.get_stopTime() + elev.get_closeTime() + elev.get_openTime()
-        return n * time
+        return n * time *self.N_MULL_OF_COST
 
 
     def dist(self, id:str=None, call:Calls=None, elev:Elevator=None):
@@ -104,14 +107,38 @@ class OfflineAlgo:
 
         return bestElev
 
+    def avarage_time_wait(self)->float:
+        time = 0.0
+        for call in self.call_list:
+            if float(call.get_time_dst()) <= float(self.call_list[-1].get_time_dst())-1000:
+                time +=  (float(call.get_time_dst()) - float(call.get_time_arrive()))
+                # if float(call.get_time_dst()) >  3:
+                #     print(float(call.get_time_dst()))
+        print("Avarage for ",self.N_MULL_OF_COST, "is: ",time / len(self.call_list))
+        return time/len(self.call_list)
+
+
 
 if __name__ == '__main__':
-    jsonPath = '../venv/B4.json'
-    csvPath = r"C:\Users\Aviva\Desktop\untitled2\venv\Calls_a.csv"
-    OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath)
+    jsonPath = r'C:\Users\Aviva\Desktop\B5.json'
+    csvPath = r"C:\Users\Aviva\Desktop\Calls_d.csv"
 
-    # algoOffline(call_list=call_list)
+    algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=1.9)
+    maxAvg = algo.avarage_time_wait()
+    max_n = 1.0
+    n=0.9
+    while n < 3.55:
+        algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=n)
+        tempAvg = algo.avarage_time_wait()
+        if (tempAvg > maxAvg):
+            maxAvg = tempAvg
+            max_n = n
+        n += 0.8
 
+    algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=max_n)
+    print("n: ",max_n,"AVG: ",algo.avarage_time_wait())
+
+    # OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=1.9)
 
 
 

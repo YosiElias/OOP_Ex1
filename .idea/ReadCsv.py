@@ -20,7 +20,7 @@ def read_csv(path: str) -> {}:
     return {"call_list": call_list, "rows_of_csv": rows}
 
 def write_csv(allocated_list:[]=None, rows:[]=None):      # path_new_csv: str=None, path_old_csv: str=None,
-    with open('output.csv', 'w', newline='') as f:     #'w'
+    with open(r'C:\Users\Aviva\Desktop\output.csv', 'w', newline='') as f:     #'w'
         # print(len(allocated_list))
         writer = csv.writer(f)  #  quoting=csv.QUOTE_ALL
         for i in range(len(allocated_list)):       #row, ans        rows
