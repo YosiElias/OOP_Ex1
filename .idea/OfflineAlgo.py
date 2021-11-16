@@ -22,10 +22,10 @@ class OfflineAlgo:
     def __init__(self, jsonPath:str=None, csvPath:str=None, N_MULL_OF_COST:float=1.0, FILTER:int=0):
         self.N_MULL_OF_COST = N_MULL_OF_COST    # Todo: 1.9 is good n for B5_d_ - dbs
         self.FILTER = FILTER
-        if filter == 0:
-            self.bestWork = True
-        else:
-            self.bestWork = False
+        # if filter == 0:
+        #     self.bestWork = True
+        # else:
+        #     self.bestWork = False
         self.b: Building = ReadFromJson.read(jsonPath)
         self.index_elev_dict = {}
         j=0
@@ -61,7 +61,7 @@ class OfflineAlgo:
         else:
             bestElev = []
         if len(bestElev)==0:
-            self.bestWork = False
+            # self.bestWork = False
             for id in elevDic.keys():
                 bestElev.append(str(id))
 
@@ -87,10 +87,10 @@ class OfflineAlgo:
         elevCalls = self.manage._callDict.get(str(id))
         pos = self.manage.getPos(id=id, time=call.get_time_arrive())
         amountFloor = abs(int(call.get_src()) - int(call.get_dest()))+1
-        if self.bestWork or len(elevCalls) == 0:
-            comeCall =  abs(int(call.get_src()) - int(pos))+1
-        else:
-            comeCall = abs(int(call.get_src()) - int(elevCalls[-1].get_dest())) + 1  + abs(int(elevCalls[-1].get_dest() )- int(pos)) +1
+        # if self.bestWork or len(elevCalls) == 0:
+        comeCall =  abs(int(call.get_src()) - int(pos))+1
+        # else:
+        #     comeCall = abs(int(call.get_src()) - int(elevCalls[-1].get_dest())) + 1  + abs(int(elevCalls[-1].get_dest() )- int(pos)) +1
         speedFloor = 1.0/elev.get_speed()
         speedCallStart = speedFloor * amountFloor
         speedCall = speedFloor * comeCall
