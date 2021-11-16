@@ -21,7 +21,7 @@ def read_csv(path: str) -> {}:
 
 def write_csv(allocated_list:[]=None, rows:[]=None):      # path_new_csv: str=None, path_old_csv: str=None,
     with open(r'C:\Users\Aviva\Desktop\output.csv', 'w', newline='') as f:     #'w'
-        # print(len(allocated_list))
+        print((allocated_list))
         writer = csv.writer(f)  #  quoting=csv.QUOTE_ALL
         for i in range(len(allocated_list)):       #row, ans        rows
             rows[i][5] = allocated_list[i]    #check if this loop legal

@@ -12,28 +12,36 @@ class Manage:
         self._elevDict = b.get_elevDict()
         self._callDict = {}
         for elev in b.get_elevDict().keys():    #init list for all the elevator
-            self._callDict[str(b.get_elevDict().get(elev).get_id())] = []
+            self._callDict[str(elev)] = []      # b.get_elevDict().get(elev).get_id()
         self._direction = {}
+        # for elev in b.get_elevDict().keys():    #init list for all the elevator
+        #     self._callDict[str(b.get_elevDict().get(elev).get_id())] = []
+        # self._callDict[str(id)] = []
 
     def get_state(self,  id:str=None, time:float=0.0) -> str:
         """
         :return: "LEVEL"/"UP"/"DOWN"
         """
         elevCalls = self._callDict.get(str(id))  # list of Calls
+        if len(elevCalls)==0:
+            return "LEVEL"
         i = len(elevCalls) - 1
         for call in elevCalls.__reversed__():
             if call.get_time_dst() <= float(time) and i==len(elevCalls)-1: #the last call
                 return "LEVEL"
                 break
             elif call.get_time_dst() <= float(time):
-                return call.get_dirc()
+                return elevCalls[i+1].get_dirc()
                 break
             elif call.get_time_src() <= float(time):
                 return call.get_dirc()
                 break
+            i -= 1;
+        return elevCalls[i + 1].get_dirc()
+
 
     def numOfWaitCalls(self, id: str = None, time:float=0.0) -> int:
-        callListOfElev =  self.get_callDict().get(id)
+        callListOfElev =  self.get_callDict().get(str(id))
         if len(callListOfElev) == 0:
             return 0
         callCounter = 0
@@ -88,8 +96,8 @@ class Manage:
         return self._callDict
 
     def addCall(self, id, call):
-        if self._callDict.get(id) == None:
-            self._callDict[str(id)] = []
+        # if self._callDict.get(id) == None:
+        #     self._callDict[str(id)] = []
         self._callDict.get(id).append(call)
         src_time = self.calaulate_src_time(id=id, call=call)
         call.add_src_time(time=src_time)

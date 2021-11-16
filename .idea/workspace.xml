@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5beb7abf-ca75-47c7-b2bc-3ed340cec608" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Ex1_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ex1_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Calls.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Calls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OOP_Ex1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOP_Ex1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/OfflineAlgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OfflineAlgo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ReadCsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReadCsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ReadFromJson.py" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReadFromJson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,20 +36,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aviva\Desktop\untitled2\.idea" />
+      <recent name="C:\Users\Aviva\Desktop\OOP_Ex1\.idea" />
+      <recent name="C:\Users\Aviva\Desktop\untitled2\venv" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Aviva\Desktop\untitled2\venv" />
       <recent name="C:\Users\Aviva\Desktop\OOP_Ex1\.idea" />
       <recent name="C:\Users\Aviva\Desktop\untitled2" />
       <recent name="C:\Users\Aviva\Desktop\untitled2\.idea" />
       <recent name="C:\Users\Aviva\Desktop\untitled2\.idea\inspectionProfiles" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Aviva\Desktop\untitled2\.idea" />
-      <recent name="C:\Users\Aviva\Desktop\OOP_Ex1\.idea" />
-      <recent name="C:\Users\Aviva\Desktop\untitled2\venv" />
     </key>
   </component>
   <component name="RunManager" selected="Python.OfflineAlgo">
@@ -101,9 +102,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Aviva\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.idea" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/OfflineAlgo.py" />
@@ -185,61 +186,77 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" width="816" height="723" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1636580144583" />
+    <state x="368" y="0" key="#OfflineAlgo" timestamp="1636976083056">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="368" y="0" key="#OfflineAlgo/0.0.1280.680@0.0.1280.680" timestamp="1636976083056" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636971921012">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1636971921012" />
     <state x="669" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1636405324940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="446" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1636393856972" />
     <state x="669" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636405324940" />
+    <state width="837" height="466" key="DebuggerActiveHint" timestamp="1637078054993">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="837" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1637078054993" />
+    <state x="376" y="105" key="EnvironmentVariablesDialog" timestamp="1636971914786">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="376" y="105" key="EnvironmentVariablesDialog/0.0.1280.680@0.0.1280.680" timestamp="1636971914786" />
     <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1636930624130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636930624130" />
-    <state width="1899" height="299" key="GridCell.Tab.0.bottom" timestamp="1636933607765">
+    <state width="1899" height="262" key="GridCell.Tab.0.bottom" timestamp="1637086980069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="96" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1636909863494" />
-    <state width="1899" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636933607765" />
-    <state width="1899" height="299" key="GridCell.Tab.0.center" timestamp="1636933607765">
+    <state width="533" height="130" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1637019954928" />
+    <state width="1899" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637086980069" />
+    <state width="1899" height="262" key="GridCell.Tab.0.center" timestamp="1637086980069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="96" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1636909863494" />
-    <state width="1899" height="299" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636933607765" />
-    <state width="1899" height="299" key="GridCell.Tab.0.left" timestamp="1636933607764">
+    <state width="533" height="130" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1637019954927" />
+    <state width="1899" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637086980069" />
+    <state width="1899" height="262" key="GridCell.Tab.0.left" timestamp="1637086980069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="96" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1636909863493" />
-    <state width="1899" height="299" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636933607764" />
-    <state width="1899" height="299" key="GridCell.Tab.0.right" timestamp="1636933607765">
+    <state width="533" height="130" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1637019954927" />
+    <state width="1899" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637086980069" />
+    <state width="1899" height="262" key="GridCell.Tab.0.right" timestamp="1637086980069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="96" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1636909863494" />
-    <state width="1899" height="299" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636933607765" />
-    <state width="1899" height="279" key="GridCell.Tab.1.bottom" timestamp="1636932656693">
+    <state width="533" height="130" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1637019954928" />
+    <state width="1899" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637086980069" />
+    <state width="1899" height="363" key="GridCell.Tab.1.bottom" timestamp="1637086356182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636932656693" />
-    <state width="1899" height="279" key="GridCell.Tab.1.center" timestamp="1636932656693">
+    <state width="1899" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637086356182" />
+    <state width="1899" height="363" key="GridCell.Tab.1.center" timestamp="1637086356182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636932656693" />
-    <state width="1899" height="279" key="GridCell.Tab.1.left" timestamp="1636932656693">
+    <state width="1899" height="363" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637086356182" />
+    <state width="1899" height="363" key="GridCell.Tab.1.left" timestamp="1637086356182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636932656693" />
-    <state width="1899" height="279" key="GridCell.Tab.1.right" timestamp="1636932656693">
+    <state width="1899" height="363" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637086356182" />
+    <state width="1899" height="363" key="GridCell.Tab.1.right" timestamp="1637086356182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636932656693" />
-    <state x="236" y="53" key="SettingsEditor" timestamp="1636930659526">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="363" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637086356182" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1636972035560">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1636619730359" />
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1636972035560" />
     <state x="236" y="53" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1636930659526" />
-    <state x="522" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1636923721673">
+    <state x="522" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1637074673397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="348" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1636909093138" />
-    <state x="522" y="257" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636923721673" />
+    <state x="348" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1636976043232" />
+    <state x="522" y="257" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637074673397" />
     <state x="323" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1636620913942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -251,6 +268,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/.idea/OfflineAlgo.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/.idea/OfflineAlgo.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/.idea/OfflineAlgo.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

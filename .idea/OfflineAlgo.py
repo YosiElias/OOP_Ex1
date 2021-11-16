@@ -6,7 +6,7 @@ from Manage import Manage
 from Calls import Calls
 import sys
 import ReadCsv
-# import numpy as np
+import numpy as np
 ####################################################
 # temp value:
 # calList = []
@@ -19,8 +19,13 @@ import ReadCsv
 ###################################################
 class OfflineAlgo:
 
-    def __init__(self, jsonPath:str=None, csvPath:str=None, N_MULL_OF_COST:float=1.0):
+    def __init__(self, jsonPath:str=None, csvPath:str=None, N_MULL_OF_COST:float=1.0, FILTER:int=0):
         self.N_MULL_OF_COST = N_MULL_OF_COST    # Todo: 1.9 is good n for B5_d_ - dbs
+        self.FILTER = FILTER
+        if filter == 0:
+            self.bestWork = True
+        else:
+            self.bestWork = False
         self.b: Building = ReadFromJson.read(jsonPath)
         self.index_elev_dict = {}
         j=0
@@ -51,12 +56,16 @@ class OfflineAlgo:
         elevDic = self.b.get_elevDict()
         minCost = ["0", sys.maxsize]
         time = call.get_time_arrive()
-        bestElev = self.getRelevantElev(call)
+        if self.FILTER==0:
+            bestElev = self.getRelevantElev(call)
+        else:
+            bestElev = []
         if len(bestElev)==0:
+            self.bestWork = False
             for id in elevDic.keys():
                 bestElev.append(str(id))
 
-        for id in elevDic.keys():
+        for id in bestElev:
             elev = elevDic.get(str(id))
             dis = self.dist(id=id, call=call, elev=elev) #Time that will take to make the call 'DONE'
             timeCost = self.systemTime(id=id, call=call, elev=elev) #In how many time the other calls in the elevator will be delayed
@@ -75,9 +84,13 @@ class OfflineAlgo:
 
 
     def dist(self, id:str=None, call:Calls=None, elev:Elevator=None):
+        elevCalls = self.manage._callDict.get(str(id))
         pos = self.manage.getPos(id=id, time=call.get_time_arrive())
         amountFloor = abs(int(call.get_src()) - int(call.get_dest()))+1
-        comeCall =  abs(int(call.get_src()) - int(pos))+1
+        if self.bestWork or len(elevCalls) == 0:
+            comeCall =  abs(int(call.get_src()) - int(pos))+1
+        else:
+            comeCall = abs(int(call.get_src()) - int(elevCalls[-1].get_dest())) + 1  + abs(int(elevCalls[-1].get_dest() )- int(pos)) +1
         speedFloor = 1.0/elev.get_speed()
         speedCallStart = speedFloor * amountFloor
         speedCall = speedFloor * comeCall
@@ -94,16 +107,17 @@ class OfflineAlgo:
 
         for id in elevDic.keys():
             elev = elevDic.get(str(id))
-            if self.manage.get_state(id, time) == "LEVEL":
-                bestElev.append(elev)
-            elif call.get_dirc() == "UP" and self.manage.get_state(id, time) == "UP":
+            state = self.manage.get_state(id, time)
+            if  state == "LEVEL":
+                bestElev.append(elev.get_id())
+            elif call.get_dirc() == "UP" and state == "UP":
                elevPos = self.manage.getPos(id=id, time=call.get_time_arrive())
                if int(elevPos) < int(call.get_src()):
-                   bestElev.append(elev)
-            elif call.get_dirc() == "DOWN" and self.manage.get_state(id, time) == "DOWN":
+                   bestElev.append(elev.get_id())
+            elif call.get_dirc() == "DOWN" and state == "DOWN":
                elevPos = self.manage.getPos(id=id, time=call.get_time_arrive())
                if int(elevPos) > int(call.get_src()):
-                   bestElev.append(elev)
+                   bestElev.append(elev.get_id())
 
         return bestElev
 
@@ -120,23 +134,28 @@ class OfflineAlgo:
 
 
 if __name__ == '__main__':
-    jsonPath = r'C:\Users\Aviva\Desktop\B5.json'
-    csvPath = r"C:\Users\Aviva\Desktop\Calls_d.csv"
 
-    algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=1.9)
+    jsonPath = r'C:\Users\Aviva\Desktop\B3.json'
+    csvPath = r"C:\Users\Aviva\Desktop\Calls_b.csv"
+
+    algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=1.0,  FILTER=0)
     maxAvg = algo.avarage_time_wait()
+    bestfilter = 0
     max_n = 1.0
     n=0.9
     while n < 3.55:
-        algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=n)
-        tempAvg = algo.avarage_time_wait()
-        if (tempAvg > maxAvg):
-            maxAvg = tempAvg
-            max_n = n
-        n += 0.8
+        for filter in [0,1]:    #0= with filter. 1= without filter
+            algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=n, FILTER=filter)
+            tempAvg = algo.avarage_time_wait()
+            if (tempAvg < maxAvg):
+                maxAvg = tempAvg
+                max_n = n
+                bestfilter = filter
+            n += 0.8
 
-    algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=max_n)
-    print("n: ",max_n,"AVG: ",algo.avarage_time_wait())
+
+    algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=max_n, FILTER=bestfilter)
+    print("n: ",max_n,"FILTER: ",bestfilter ,"AVG: ",algo.avarage_time_wait())
 
     # OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=1.9)
 

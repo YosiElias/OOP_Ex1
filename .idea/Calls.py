@@ -8,7 +8,7 @@ class Calls:
         self._dest = dest
         self._dst_time = sys.maxsize
         self._src_time = sys.maxsize
-        if src < dest:
+        if int(src) < int(dest):
             self._dirc = "UP"
         else:
             self._dirc = "DOWN"
