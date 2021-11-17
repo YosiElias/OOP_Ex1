@@ -8,24 +8,23 @@ import sys
 import ReadCsv
 import numpy as np
 ####################################################
-# temp value:
-# calList = []
-# c1 = Calls(arrive_time=1.0, src=0, dest=9)
-# calList.append(c1)
-# c2 = Calls(arrive_time=15.0, src=-10, dest=90)
-# calList.append(c2)
-# c3 = Calls(arrive_time=100.0, src=70, dest=90)
-# calList.append(c3)
+# This is an offline model that aims to bring back the best elevator placement for any scenario.
+#
+# This is where the main calculation and management of the algorithm takes place,
+# the algorithm receives as a parameter the "degree of generosity" (between 0.9 and 3.5),
+# and the filter parameter that decides whether to apply a filter on the elevators to the most relevant elevators
+# for reading and only then compare, or search among all elevators. (filter off  when = 1).
+#
+# Finally in the main function we choose from all the parameters the best parameters for the relevant scenario and building.
+# We can do this because it is an offline algorithm.
 ###################################################
+
+
 class OfflineAlgo:
 
     def __init__(self, jsonPath:str=None, csvPath:str=None, N_MULL_OF_COST:float=1.0, FILTER:int=0):
-        self.N_MULL_OF_COST = N_MULL_OF_COST    # Todo: 1.9 is good n for B5_d_ - dbs
+        self.N_MULL_OF_COST = N_MULL_OF_COST
         self.FILTER = FILTER
-        # if filter == 0:
-        #     self.bestWork = True
-        # else:
-        #     self.bestWork = False
         self.b: Building = ReadFromJson.read(jsonPath)
         self.index_elev_dict = {}
         j=0
@@ -49,7 +48,6 @@ class OfflineAlgo:
             self.manage.addCall(id=id, call=call)
         for i in range(len(allocated_list)):
             allocated_list[i] = self.index_elev_dict.get(str(allocated_list[i]))
-        # print(allocated_list)
         ReadCsv.write_csv(allocated_list=allocated_list, rows=self.rows_of_old_csv)
 
     def alocate(self, call:Calls=None)-> float:
@@ -61,7 +59,6 @@ class OfflineAlgo:
         else:
             bestElev = []
         if len(bestElev)==0:
-            # self.bestWork = False
             for id in elevDic.keys():
                 bestElev.append(str(id))
 
@@ -87,10 +84,7 @@ class OfflineAlgo:
         elevCalls = self.manage._callDict.get(str(id))
         pos = self.manage.getPos(id=id, time=call.get_time_arrive())
         amountFloor = abs(int(call.get_src()) - int(call.get_dest()))+1
-        # if self.bestWork or len(elevCalls) == 0:
         comeCall =  abs(int(call.get_src()) - int(pos))+1
-        # else:
-        #     comeCall = abs(int(call.get_src()) - int(elevCalls[-1].get_dest())) + 1  + abs(int(elevCalls[-1].get_dest() )- int(pos)) +1
         speedFloor = 1.0/elev.get_speed()
         speedCallStart = speedFloor * amountFloor
         speedCall = speedFloor * comeCall
@@ -124,10 +118,8 @@ class OfflineAlgo:
     def avarage_time_wait(self)->float:
         time = 0.0
         for call in self.call_list:
-            if float(call.get_time_dst()) <= float(self.call_list[-1].get_time_dst())-1000:
+            if float(call.get_time_dst()) <= float(self.call_list[-1].get_time_dst())-1000:# -1000 to 'normlaze' the time to be more realy
                 time +=  (float(call.get_time_dst()) - float(call.get_time_arrive()))
-                # if float(call.get_time_dst()) >  3:
-                #     print(float(call.get_time_dst()))
         print("Avarage for ",self.N_MULL_OF_COST, "is: ",time / len(self.call_list))
         return time/len(self.call_list)
 
@@ -155,9 +147,7 @@ if __name__ == '__main__':
 
 
     algo = OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=max_n, FILTER=bestfilter)
-    print("n: ",max_n,"FILTER: ",bestfilter ,"AVG: ",algo.avarage_time_wait())
-
-    # OfflineAlgo(jsonPath=jsonPath, csvPath=csvPath, N_MULL_OF_COST=1.9)
+    print("Best n: ",max_n,"Best FILTER: ",bestfilter ,"AVG: ",algo.avarage_time_wait())
 
 
 
