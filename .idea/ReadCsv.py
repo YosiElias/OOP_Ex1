@@ -12,29 +12,16 @@ def read_csv(path: str) -> {}:
     with open(path) as f:
         reader = csv.reader(f)
         for row in reader:
-            c = Calls(arrive_time=row[1], src=row[2], dest=row[3]) #just_call=row[0], ,assigning=row[4]
+            c = Calls(arrive_time=row[1], src=row[2], dest=row[3])
             call_list.append(c)
             rows.append(row)
-    # print(type(reader))
-    # print((rows))
     return {"call_list": call_list, "rows_of_csv": rows}
 
-def write_csv(allocated_list:[]=None, rows:[]=None):      # path_new_csv: str=None, path_old_csv: str=None,
-    with open(r'C:\Users\Aviva\Desktop\output.csv', 'w', newline='') as f:     #'w'
+def write_csv(allocated_list:[]=None, rows:[]=None):
+    with open(r'C:\Users\Aviva\Desktop\output.csv', 'w', newline='') as f:
         print((allocated_list))
-        writer = csv.writer(f)  #  quoting=csv.QUOTE_ALL
-        for i in range(len(allocated_list)):       #row, ans        rows
-            rows[i][5] = allocated_list[i]    #check if this loop legal
+        writer = csv.writer(f)
+        for i in range(len(allocated_list)):
+            rows[i][5] = allocated_list[i]
         writer.writerows(rows)
 
-
-if __name__ == '__main__':
-    call_list = read_csv(r"C:\Users\Aviva\Desktop\untitled2\venv\Calls_a.csv")  #-----return Dict!!!-------
-    # print(d.get_full_call(d,3).get_src())
-    # m = Manage()
-    # print(m.callList)
-    #
-    #
-    # print(call_list[0])
-    # m= Manage
-    # m.get_full_call()
