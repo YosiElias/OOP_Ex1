@@ -1,26 +1,24 @@
 from Building import Building
 from Elevator import Elevator
 from Calls import Calls
-import math
 
 
 class Manage:
-
+    """
+        This class aims to manage the data of calls
+        and elevators and perform accurate calculations for the algorithm department.
+    """
     def __init__(self, b:Building=None, callList:[]=None):
         self._b = b
-        self.callList = callList    #public variable
+        self.callList = callList    #'public' variable
         self._elevDict = b.get_elevDict()
         self._callDict = {}
         for elev in b.get_elevDict().keys():    #init list for all the elevator
-            self._callDict[str(elev)] = []      # b.get_elevDict().get(elev).get_id()
-        self._direction = {}
-        # for elev in b.get_elevDict().keys():    #init list for all the elevator
-        #     self._callDict[str(b.get_elevDict().get(elev).get_id())] = []
-        # self._callDict[str(id)] = []
+            self._callDict[str(elev)] = []      # init to empty list
 
     def get_state(self,  id:str=None, time:float=0.0) -> str:
         """
-        :return: "LEVEL"/"UP"/"DOWN"
+        :return: "LEVEL"/"UP"/"DOWN" depending on the condition of the elevator at the requested time
         """
         elevCalls = self._callDict.get(str(id))  # list of Calls
         if len(elevCalls)==0:
@@ -41,6 +39,12 @@ class Manage:
 
 
     def numOfWaitCalls(self, id: str = None, time:float=0.0) -> int:
+        """
+        the function returns some calls that will be delayed if I added a call at a certain time.
+        :param id: id of elevator
+        :param time: time to check
+        :return: int. some of calls that will be delayed if I added a call at a certain time.
+        """
         callListOfElev =  self.get_callDict().get(str(id))
         if len(callListOfElev) == 0:
             return 0
@@ -62,7 +66,6 @@ class Manage:
         :return: where th elev is in time 'time'
         """
         floor = 0 # defulte of elevator before first move
-        # if self._direction.get(id) == "UP":
         elevCalls = self._callDict.get(str(id)) #list of Calls
         i = len(elevCalls) - 1
         for call in elevCalls.__reversed__():
@@ -96,8 +99,6 @@ class Manage:
         return self._callDict
 
     def addCall(self, id, call):
-        # if self._callDict.get(id) == None:
-        #     self._callDict[str(id)] = []
         self._callDict.get(id).append(call)
         src_time = self.calaulate_src_time(id=id, call=call)
         call.add_src_time(time=src_time)
@@ -130,9 +131,3 @@ class Manage:
         stops = self.numOfWaitCalls(id=id, time=this_time)
         time = this_time + floor/elev.get_speed() + stops*stop_time
         return time
-
-    def changDirc(self,elev:Elevator=None, dirction:str=None):
-        if dirction!=None and elev!=None:
-            self._direction[str(elev.get_id())] = dirction
-    def get_Dirc(self,id:str=None) -> str:
-        return self._direction[str(id)]
