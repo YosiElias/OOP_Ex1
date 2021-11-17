@@ -1,5 +1,9 @@
 
 class Elevator:
+    """
+    Elevator Class: Receives data and builds an elevator object.
+    We built getters and seters even though it is in Python and it is possible to work even without them, because we wanted a clean and tidy job with unequivocal commands and names.
+    """
 
     def __str__(self) -> str:
         ans = f"id: {self.get_id()}"
@@ -59,11 +63,3 @@ class Elevator:
     def set_stopTime(self, stopTime: float = None) -> None:
         self._stopTime = stopTime
 
-
-
-if __name__ == '__main__':
-
-    new_elev = Elevator(id=5, openTime=0.11)
-    print(new_elev.get_id())
-    new_elev.set_closeTime(0.88)
-    print(new_elev)
