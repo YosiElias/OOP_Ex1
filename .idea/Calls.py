@@ -1,6 +1,10 @@
 import sys
 
 class Calls:
+    """
+    'Call' Class: Receives data and builds a 'call' object.
+    We built getters and seters even though it is in Python and it is possible to work even without them, because we wanted a clean and tidy job with unequivocal commands and names.
+    """
 
     def __init__(self, arrive_time: float = None, src: int = None, dest: int =None):
         self._arrive_time = arrive_time
@@ -21,14 +25,13 @@ class Calls:
         self.add_dst_time(dst_time)
         self._alocateTo = id
 
-
+    # Seters:
     def add_src_time(self, time:float=None):
         self._src_time = time
-
-
     def add_dst_time(self, time:float=None):
         self._dst_time = time
 
+    # Geters:
     def get_dirc(self) -> str:
         return self._dirc
     def get_time_arrive(self)-> float:
@@ -37,9 +40,7 @@ class Calls:
         return self._src_time
     def get_time_dst(self)-> float:
         return self._dst_time
-
     def get_src(self) -> int:
         return self._src
-
     def get_dest(self) -> int:
         return self._dest
