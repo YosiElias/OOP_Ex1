@@ -51,7 +51,7 @@ quality job which explaines the principle's of the elevator's movement and gave 
 
 
 ### Class diagram
-![This is an image](UML.png)
+![This is an image](https://github.com/YosiElias/OOP_Ex1/blob/master/venv/UML%20Ex1%20OOP.png)
 
 ### Results
 | Building/Calls| a                 |b                    |c                   |d                   |
